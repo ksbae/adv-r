@@ -34,7 +34,7 @@ Map(function(x, y) f(x, y, zs), xs, ys)
 Later in this chapter, we'll learn about partial application using the `partial()` function. Partial application encapsulates the use of an anonymous function to supply default arguments, and allows us to write succinct code:
 
 ```{r, eval = FALSE}
-Map(partial(f, zs = zs), xs, yz)
+Map(partial(f, zs = zs), xs, ys)
 ```
 
 This is an important use of FOs: by transforming the input function, you eliminate parameters from a functional. In fact, as long as the inputs and outputs of the function remain the same, this approach allows your functionals to be more extensible, often in ways you haven't thought of.
